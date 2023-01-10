@@ -8,9 +8,9 @@
     </tr>
     <tr *ngFor="let city of cities">
         <td >{{city.name}}</td>
-        <td   *ngIf="city.temp <0; then cold; else cool" >{{city.temp}}</td>
-        <ng-template #cold><div class= "express">cold</div> </ng-template>
-        <ng-template #cool><div>cool</div></ng-template>
+        <td   *ngIf="city.temp <0; then cold; else cool" ></td>
+        <ng-template #cold><div class= "express" > {{city.temp}}</div> </ng-template>
+        <ng-template #cool><div> {{city.temp}}</div> </ng-template>
         
     </tr>
     

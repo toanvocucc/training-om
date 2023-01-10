@@ -14,5 +14,5 @@ export class AppComponent {
     },{
       name:'haiphong ', temp: -4
     }];
-  ;
+  
 }
