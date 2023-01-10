@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'traning';
-  
-  public student =[{
-    name:"Toan", home: "haiduong"
-  },
-    {name:"cuong", home: "haiphong"
-  }
-];
+    public cities =[{
+      name: 'hochiminh ',temp: -30
+    },{
+      name: 'hanoi ', temp: 19
+    },{
+      name:'haiphong ', temp: -4
+    }];
+  ;
 }

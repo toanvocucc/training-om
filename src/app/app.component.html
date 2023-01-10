@@ -1,6 +1,20 @@
 <h1>html on</h1>
-<!-- <p> xin chao{{student}}</p> -->
-<div *ngFor="let students of student">
-    <p>{{students.name}},{{students.home}}</p>
+<link rel="stylesheet" href="app.component.scss">
 
-</div>
+<table>
+    <tr>
+        <th>City</th>
+        <th>temp</th>
+    </tr>
+    <tr *ngFor="let city of cities">
+        <td >{{city.name}}</td>
+        <td   *ngIf="city.temp <0; then cold; else cool" >{{city.temp}}</td>
+        <ng-template #cold><div class= "express">cold</div> </ng-template>
+        <ng-template #cool><div>cool</div></ng-template>
+        
+    </tr>
+    
+   
+    
+</table>
+

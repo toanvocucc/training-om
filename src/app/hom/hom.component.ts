@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./hom.component.scss']
 })
 export class HomComponent {
-
+public name = 'toan';
 }
