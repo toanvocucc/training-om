@@ -1,23 +1,6 @@
-<h1>html on</h1>
-<link rel="stylesheet" href="app.component.scss">
+<h1>home </h1>
+<input type = "text"  [(ngModel)]="name">
+<!-- du lieu[] tu back len front()du lieu tu front len back -->
+<p> xin chao {{name}}</p>
 
-<table>
-    <tr>
-        <th>City</th>
-        <th>temp</th>
-    </tr>
-    <tr *ngFor="let city of cities">
-        <td >{{city.name}}</td>
-        <td >
-            <div [ngClass] ="{'express' : city.temp > 0 }"> <td>{{city.temp}}</td></div>
-
-
-        </td>
-        
-        
-    </tr>
-    
-   
-    
-</table>
 

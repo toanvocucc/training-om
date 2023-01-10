@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'traning';
-    public cities =[{
-      name: 'hochiminh ',temp: -30
-    },{
-      name: 'hanoi ', temp: 19
-    },{
-      name:'haiphong ', temp: -4
-    }];
+    public name =" " ;
   
 }
